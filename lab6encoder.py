@@ -13,6 +13,6 @@ while True:
             new_string += str(temp)
         print('Your password has been encoded and stored!\n')
     elif op == '2':
-        print(f'The encoded password is {new_string}, and the original password is {var}.\n')
+        pass
     elif op == '0':
         break
