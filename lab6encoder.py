@@ -13,6 +13,14 @@ while True:
             new_string += str(temp)
         print('Your password has been encoded and stored!\n')
     elif op == '2':
-         print(f'The encoded password is {new_string}, and the original password is {var}.\n')
+        var = new_string
+        decoded_str = ""
+        for i in var:
+            temp = int(i)
+            temp -= 3
+            if temp < 0:
+                temp += 10
+            decoded_str += str(temp)
+        print(f'The encoded password is {var}, and the original password is {decoded_str}.\n')
     elif op == '0':
         break
